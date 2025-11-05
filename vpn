@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zima VPN | Turn Off VPN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .header {
+            background: #ff6b6b;
+            color: white;
+            padding: 25px 20px;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 30px 25px;
+        }
+        
+        .message {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+        
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .btn {
+            display: block;
+            background: #4ecdc4;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .btn:hover {
+            background: #45b7af;
+            transform: translateY(-2px);
+        }
+        
+        .btn-whatsapp {
+            background: #25D366;
+        }
+        
+        .btn-whatsapp:hover {
+            background: #128C7E;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .icon {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>TAFADHALI..!!</h1>
+            <p>Zima VPN ili kuweza kuendelea kuangalia matokeo yako</p>
+        </div>
+        
+        <div class="content">
+            <div class="icon">🔒</div>
+            <p class="message">Tumeona unatumia VPN. Tafadhali zima VPN yako kwanza ili uweze kuendelea.</p>
+            
+            <div class="button-container">
+                <button class="btn" id="continue-btn">Nimeshazima Tayari, Naomba Kuendelea</button>
+                <button class="btn btn-whatsapp" id="whatsapp-btn">Jiunge Na WhatsApp Channel</button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Hakimiliki &copy; 2024. Haki zote zimehifadhiwa.</p>
+        </div>
+    </div>
+
+    <script>
+        // Continue button functionality
+        document.getElementById('continue-btn').addEventListener('click', function() {
+            // Replace with your actual URL where users should go after turning off VPN
+            window.location.href = 'http://onlinesyz-necta.github.io/psle';
+        });
+        
+        // WhatsApp button functionality
+        document.getElementById('whatsapp-btn').addEventListener('click', function() {
+            // Replace with your actual WhatsApp channel link
+            window.open('https://www.whatsapp.com/channel/0029Vb6oOej7tkj6NvU0En3I');
+        });
+    </script>
+</body>
+</html>
