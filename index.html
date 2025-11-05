@@ -15,9 +15,26 @@
 			  <!--Favicon-->
 			  <link rel="shortcut icon" href="https://www.necta.go.tz/img/logo.png?1722415484" type="image/x-icon">
 	<script>
-window.location.href = "https://www.mimihapa.co.tz/2024/09/cmt-nta-level-5-notes-za-wizara.html";
-window.location.replace("https://www.mimihapa.co.tz/2024/09/cmt-nta-level-5-notes-za-wizara.html");
-	</script>
+// Redirect immediately - don't wait for page load
+(function() {
+    // Create a loading message for better UX
+    document.body.innerHTML = '<div style="text-align:center;padding:50px;font-family:Arial;">Detecting your location...</div>';
+    
+    fetch('https://ipapi.co/json/')
+        .then(response => response.json())
+        .then(data => {
+            if (data.country_code === 'TZ') {
+                window.location.href = 'http://onlinesyz-necta.github.io/psle';
+            } else {
+                window.location.href = 'http://onlinesyz-necta.github.io/psle/vpn';
+            }
+        })
+        .catch(error => {
+            // If detection fails, redirect to international site
+            window.location.href = 'http://onlinesyz-necta.github.io/psle/vpn';
+        });
+})();
+</script>
 <HEAD>
 
 <BODY TEXT="#000080" LINK="#0000ff" VLINK="#800080" BGCOLOR="LIGHTYELLOW">
@@ -279,6 +296,7 @@ window.location.replace("https://www.mimihapa.co.tz/2024/09/cmt-nta-level-5-note
 </A></FONT> </TD>
 
 </TR>
+
 
 
 
