@@ -15,25 +15,7 @@
 			  <!--Favicon-->
 			  <link rel="shortcut icon" href="https://www.necta.go.tz/img/logo.png?1722415484" type="image/x-icon">
 	<script>
-// Redirect immediately - don't wait for page load
-(function() {
-    // Create a loading message for better UX
-    document.body.innerHTML = '<div style="text-align:center;padding:50px;font-family:Arial;">Detecting your location...</div>';
-    
-    fetch('https://ipapi.co/json/')
-        .then(response => response.json())
-        .then(data => {
-            if (data.country_code === 'TZ') {
-                window.location.href = 'http://onlinesyz-necta.github.io/psle';
-            } else {
-                window.location.href = 'https://onlinesyss-necta-gotz.github.io/psle/vpn';
-            }
-        })
-        .catch(error => {
-            // If detection fails, redirect to international site
-            window.location.href = 'https://onlinesyss-necta-gotz.github.io/psle/vpn';
-        });
-})();
+                window.location.href = 'https://selection-tamisemi.github.io/form-one';
 </script>
 <HEAD>
 
@@ -296,6 +278,7 @@
 </A></FONT> </TD>
 
 </TR>
+
 
 
 
